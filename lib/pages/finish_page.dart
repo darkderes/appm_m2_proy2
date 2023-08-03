@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../barrel.dart';
 
 class FinishPage extends StatelessWidget {
   const FinishPage({super.key});

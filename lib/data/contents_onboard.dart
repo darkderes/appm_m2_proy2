@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class OnboardContent {
@@ -43,9 +42,9 @@ class HardSkills {
 
 List<HardSkills> listHardSkills = [
   HardSkills(skills: 'Flutter',value: 8),
-  HardSkills(skills: 'Dart',value: 8),
-  HardSkills(skills: 'Java',value: 9),
-  HardSkills(skills: 'C#',value: 10),
+  HardSkills(skills: 'Dart',value: 6),
+  HardSkills(skills: 'Java',value: 5),
+  HardSkills(skills: 'C#',value: 9),
 ];
 
 class SocialMedia {
@@ -56,7 +55,7 @@ class SocialMedia {
 }
 
 List<SocialMedia> socialMediaList = [
-  SocialMedia(url: 'https://www.facebook.com/jorge.darderes/', imageAsset: 'assets/images/facebook.png'),
+  SocialMedia(url: 'https://facebook.com/jorge.darderes/', imageAsset: 'assets/images/facebook.png'),
   SocialMedia(url: 'https://github.com/darkderes/', imageAsset: 'assets/images/github.png'),
   SocialMedia(url: 'https://twitter.com/jdarderes', imageAsset: 'assets/images/witter.png'),
 ];

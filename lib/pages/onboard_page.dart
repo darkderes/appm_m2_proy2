@@ -1,10 +1,5 @@
-import 'package:appm_m2_proy2/data/contents_onboard.dart';
-import 'package:appm_m2_proy2/pages/profile.dart';
-import 'package:appm_m2_proy2/pages/social_media.dart';
-import 'package:appm_m2_proy2/pages/soft_skills.dart';
-import 'package:flutter/material.dart';
-import 'hard_skills.dart';
-import 'finish_page.dart';
+// Otro archivo en el proyecto
+import '../barrel.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -48,9 +43,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   },
                   itemBuilder: (_, i) {
                     if (i == 0) {
-                      return const Profile();
+                      return Profile(
+                        indexColor: i,
+                      );
                     } else if (i == 1) {
-                      return const SoftSkill();
+                      return SoftSkill(
+                        indexColor: i,
+                      );
                     } else if (i == 2) {
                       return const HardSkill();
                     } else {

@@ -1,14 +1,9 @@
-import 'package:appm_m2_proy2/common/header.dart';
-import 'package:flutter/material.dart';
-
-import '../widgets/custom_grafic.dart';
-
+import '../barrel.dart';
 
 class HardSkill extends StatelessWidget {
   const HardSkill({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return const Center(
@@ -21,14 +16,7 @@ class HardSkill extends StatelessWidget {
              SizedBox(
                height: 20,
              ),
-                 Text(
-                "Hard Skills",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
+               CustomTextDetails(text:"Hard Skill"),
                SizedBox(
                 height: 20,
              

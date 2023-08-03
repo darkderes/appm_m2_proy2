@@ -1,13 +1,9 @@
-import 'package:appm_m2_proy2/common/header.dart';
-import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import '../data/contents_onboard.dart';
-import '../widgets/custom_card.dart';
-import '../widgets/custom_qr.dart';
+import '../barrel.dart';
 
 class Profile extends StatelessWidget {
+  final int indexColor;
   const Profile({
-    super.key,
+    super.key, required  this.indexColor,
   });
 
   @override
@@ -24,7 +20,7 @@ class Profile extends StatelessWidget {
               ),
               GestureDetector(
                   child:
-                      CustomCard(text: onboardContent.phone, icon: Icons.phone),
+                      CustomCard(text: onboardContent.phone, icon: Icons.phone, colorInput: pageColors[indexColor]),
                   onTap: () {
                     makePhoneCall(onboardContent.phone);
                   }),
@@ -33,7 +29,7 @@ class Profile extends StatelessWidget {
               ),
               GestureDetector(
                   child:
-                      CustomCard(text: onboardContent.email, icon: Icons.email),
+                      CustomCard(text: onboardContent.email, icon: Icons.email, colorInput: pageColors[indexColor]),
                   onTap: () {
                     final Uri emailLaunchUri = Uri(
                       scheme: 'mailto',

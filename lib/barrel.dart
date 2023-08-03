@@ -1,0 +1,15 @@
+export 'package:appm_m2_proy2/data/contents_onboard.dart';
+export 'package:appm_m2_proy2/pages/profile.dart';
+export 'package:appm_m2_proy2/pages/social_media.dart';
+export 'package:appm_m2_proy2/pages/soft_skills.dart';
+export 'package:flutter/material.dart';
+export 'package:appm_m2_proy2/pages/hard_skills.dart';
+export 'package:appm_m2_proy2/pages/finish_page.dart';
+export 'package:google_fonts/google_fonts.dart';
+export 'package:appm_m2_proy2/common/header.dart';
+export '../widgets/custom_grafic.dart';
+export '../widgets/custom_text_details.dart';
+export 'package:url_launcher/url_launcher.dart';
+export '../widgets/custom_card.dart';
+export '../widgets/custom_qr.dart';
+export '../widgets/custom_list_softskills.dart';
