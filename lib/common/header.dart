@@ -31,6 +31,9 @@ class Header extends StatelessWidget {
              height: 20,
            ),
            TextSubtitule(datos: onboardContent.description.toString()),
+           const Divider(
+             color: Colors.white,
+           ),
            const SizedBox(
              height: 20,
            ),

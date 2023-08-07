@@ -55,7 +55,7 @@ class SocialMedia {
 }
 
 List<SocialMedia> socialMediaList = [
-  SocialMedia(url: 'https://facebook.com/jorge.darderes/', imageAsset: 'assets/images/facebook.png'),
+  SocialMedia(url: 'https://www.facebook.com/profile.php?id==10211677653756378', imageAsset: 'assets/images/facebook.png'),
   SocialMedia(url: 'https://github.com/darkderes/', imageAsset: 'assets/images/github.png'),
   SocialMedia(url: 'https://twitter.com/jdarderes', imageAsset: 'assets/images/witter.png'),
 ];

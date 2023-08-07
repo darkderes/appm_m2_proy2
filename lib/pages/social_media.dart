@@ -16,11 +16,10 @@ class SocialMedias extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-          const CustomTextDetails(text:"Social Media"),
+            const CustomTextDetails(text: "Social Media"),
             const SizedBox(
               height: 20,
             ),
-
             GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3, // Tres elementos por fila
@@ -30,10 +29,16 @@ class SocialMedias extends StatelessWidget {
               itemBuilder: (context, index) {
                 return ListTile(
                   leading: Image.asset(socialMediaList[index].imageAsset),
-                  // title: Text(socialMediaList[index].name),
                   // Agrega aquí cualquier acción que desees realizar cuando se haga clic en la lista
-                  onTap: () {
-                       launchUrl(Uri.parse(socialMediaList[index].url.toString()));
+                  onTap: () async {
+                    try {
+                      await launchUrl(
+                          Uri.parse(socialMediaList[index].url.toString()));
+                    } catch (e) {
+                      
+                      print("Error: $e");
+                    }
+
                     // Acción al hacer clic en el elemento de la lista
                   },
                 );
